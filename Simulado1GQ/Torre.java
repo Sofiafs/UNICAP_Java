@@ -59,7 +59,6 @@ public class Torre {
     }
 
     public int atacar(){
-        int eliminados = 0;
         for(int i = 0; i < inimigosAlcancados.size(); i++){
             Inimigo inimigo = inimigosAlcancados.get(i);
             inimigo.setVida(inimigo.getVida() - danoBase);
@@ -70,9 +69,9 @@ public class Torre {
                 inimigo.setSituacao("Ferido");
             } else{
                 inimigo.setSituacao("Eliminado");
-                eliminados++;
+
             }
         }
-        return eliminados;
+        return 0;
     }
 }
