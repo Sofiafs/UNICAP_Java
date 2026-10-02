@@ -57,7 +57,7 @@ public class TorreElite extends Torre{
                 dano = getDanoCritico();
             }
 
-            if(buffs.get(i)){
+            if(buffs.get(i) == true){
                 dano += 10;
             }
 
